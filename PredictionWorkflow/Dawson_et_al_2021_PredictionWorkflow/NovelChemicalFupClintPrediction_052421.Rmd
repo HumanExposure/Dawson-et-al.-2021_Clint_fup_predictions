@@ -37,14 +37,14 @@ To fit predictions from the Clint and Fup models, you will need OPERA model pred
 
 These sets are included in the file "CombinedDescriptors_DED050621.RData", included in this folder. 
 
-Several but not all needed OPERA predictors are available from the EPA CompTox Dashboard. However, PaDEL descriptors are not available at all from the dashboard.To calculate these descriptors for your data, we recommend downloading the OPERA(Open QSAR app) application from https://github.com/kmansouri/OPERA
+Several but not all needed OPERA predictors are available from the EPA CompTox Dashboard. However, PaDEL descriptors are not available at all from the dashboard.To calculate these descriptors for your data, we recommend downloading the OPERA(Open QSAR app) application from https://github.com/NIEHS/OPERA
 
-The OPERA application is an open-source, stand-alone application that will produce both Opera predictions and PaDEL descriptions; Opera models are based entirely upon PaDEL descriptors and fingerprints. You will need either a chemical description ID(i.e., DTXSID,CASRN) or structural description(SMILES,MOL) for each chemical. Make sure to select all of the opera models you want, and select the "keep full descriptor files" box. This will generate and keep all calcualtions for all PaDEL descriptors, as well as your desired Opera predictors. Keep in mind that they may range from minutes to hours, depending on the number chemicals for which predictions are desired(10's to 1000's).   
+The OPERA application is an open-source, stand-alone application that will produce both Opera predictions and PaDEL descriptions; Opera models are based entirely upon PaDEL descriptors and fingerprints. You will need either a chemical description ID(i.e., DTXSID,CASRN) or structural description(SMILES,MOL) for each chemical. Make sure to select all of the opera models you want, and select the "keep full descriptor files" box. This will generate and keep all calculations for all PaDEL descriptors, as well as your desired Opera predictors. Keep in mind that they may range from minutes to hours, depending on the number chemicals for which predictions are desired(10's to 1000's).   
 
 
 If you want to use SMILES codes to run through the OPERA function, you can download them from the CompTox Dashboard. Then, you can write out the text file to be used in the OPERA application. Whatever data source you used, make sure there are no column headers or row number in your data file. For more information, read the documentation for data input into the OPERA application. 
 
-By checking the "keep full desciptor files" box, OPERA will produce a lot of files you don't need. You only need the Opera predictions (with default suffix "_OPERA2.6Pred") and PaDEL descriptors (default suffix "_PadelDesc").  
+By checking the "keep full descriptor files" box, OPERA will produce a lot of files you don't need. You only need the Opera predictions (with default suffix "_OPERA2.6Pred") and PaDEL descriptors (default suffix "_PadelDesc").  
 
 
 # Read in data and prepare for prediction

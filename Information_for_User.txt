@@ -1,19 +1,19 @@
 READ ME INFORMATION
 
-In the zip file contained in this report, there is a collection of materials designed to allow users to utilize the QSAR models for Clint and Fup presented in Dawson et al. 2021 to make predictions for novel chemicals. Included is the information necessary to reproduce the predictions for the Tox21 chemicals included in the paper, and as shown in the correction submitted to the journal in June of 2021.  
+In the zip file contained in this report, there is a collection of materials designed to allow users to utilize the QSAR models for Clint and Fup presented in Dawson et al. 2021 (https://doi.org/10.1021/acs.est.0c06117) to make predictions for novel chemicals. Included is the information necessary to reproduce the predictions for the Tox21 chemicals included in the paper, and as shown in the correction submitted to the journal in June of 2021.  
 
 The contents of the zip file include 
 1. An R-markdown document named "NovelChemicalFupClintPrediction_052421.Rmd"
 2. A Clint subfolder
 3. A Fup subfolder 
 4. An Example Data subfolder
-5. A copye of the Supplemental materials file "S2_Dawson et al. Supporting_Information_Revision_Final_Sharing.xlsx"
+5. A copy of the Supplemental materials file "S2_Dawson et al. Supporting_Information_Revision_Final_Sharing.xlsx"
 6. An html file called  "NovelChemicalFupClintPrediction_052421.html"
 
 
 The Rmarkdown file reads in necessary data (means and standard deviations of the training data) and model files contained in the Clint and Fup subfolders to make predictions for novel chemicals. The means and standard deviations are used to standardize descriptors of new chemicals according to the training data, and determine if chemicals are within the applicability domain of the models. The model files are the model objects themselves. Via the Random Forest predict function, predictions for Clint and Fup are made. 
 
-As detailed in the Rmarkdown document, users will need to provide Padel and Opera descriptors for new chemicals. We recommend using the standalone Opera application downloadable from https://github.com/kmansouri/OPERA to produce both sets of descriptors. Users will need chemical identifiers and/or SMILES codes for each of their chemicals for the Opera application to work. 
+As detailed in the Rmarkdown document, users will need to provide Padel and Opera descriptors for new chemicals. We recommend using the standalone Opera application downloadable from https://github.com/NIEHS/OPERA to produce both sets of descriptors. Users will need chemical identifiers and/or SMILES codes for each of their chemicals for the Opera application to work. 
  
 In the ExampleData folder, we have included information for the Tox21 chemicals included in the paper as an example. In the folder are:
 1. Output from the USEPA CompTox Dashboard 
