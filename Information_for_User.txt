@@ -29,6 +29,10 @@ By running the code chunks sequentially or all at once, the included Rmarkdown f
 
 Please note that for new chemicals, users may need to adapt the script in parts, especially if they are using Opera and Padel descriptors not output from the Opera application, to ensure that column names of descriptors are the same as what the models are expecting. 
 
+--Update 022024--
+
+A folder called NewPredictions has been added to facilitate making new model predictions.  Consult README in NewPredictions folder for more information.
+
 Please contact the corresponding author tornero-velez.rogelio@epa.gov for questions about this script.       
 
        
